@@ -18,3 +18,18 @@ assert(oneAsString == '1');
 
 // double -> String
 String piAsString = 3.14159.toStringAsFixed(2);
+
+final List<int> a = [3,3];
+
+var constantList = const [1, 2, 3];
+
+var nobleGases = {
+  2: 'helium',
+  10: 'neon',
+  18: 'argon',
+};
+
+Map<String, dynamic> arguments = {'argA': 'hello', 'argB': 42};
+
+// Dart is type safe: it uses a combination of static type checking and runtime checks to ensure that a variable’s value always matches the variable’s static type. 
+// Although types are mandatory, type annotations are optional because Dart performs type inference.

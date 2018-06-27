@@ -33,3 +33,33 @@ Map<String, dynamic> arguments = {'argA': 'hello', 'argB': 42};
 
 // Dart is type safe: it uses a combination of static type checking and runtime checks to ensure that a variable’s value always matches the variable’s static type. 
 // Although types are mandatory, type annotations are optional because Dart performs type inference.
+
+var names = List<String>(3);
+names.addAll(['Seth', 'Kathy', 'Lars']);
+names.add(42); // Error
+
+// 抽象类的行为和TS抽象类行为有点类似
+abstract class ObjectCache {
+  Object getByKey(String key);
+  void setByKey(String key, Object value);
+}
+
+//Generic types can save you the trouble of creating all these interfaces. 
+//Instead, you can create a single interface that takes a type parameter:
+abstract class Cache<T> {
+  T getByKey(String key);
+  void setByKey(String key, T value);
+}
+
+// using typed literals
+var names2 = <String>['he', 'lo', 'ok'];
+var pages = <String, String>{
+  'index.html': 'Homepage',
+  'robots.txt': 'Hints for web robots',
+  'humans.txt': 'We are people, not machines'
+};
+
+var gifs = new Map();
+
+// Symbols
+var ggg = Symbol('ssss');

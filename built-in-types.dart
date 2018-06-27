@@ -33,3 +33,7 @@ Map<String, dynamic> arguments = {'argA': 'hello', 'argB': 42};
 
 // Dart is type safe: it uses a combination of static type checking and runtime checks to ensure that a variable’s value always matches the variable’s static type. 
 // Although types are mandatory, type annotations are optional because Dart performs type inference.
+
+const List<int> list = [1,2,3];
+var List list2 = [1,2,3];  // error
+

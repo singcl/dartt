@@ -36,9 +36,11 @@ Map<String, dynamic> arguments = {'argA': 'hello', 'argB': 42};
 
 const List<int> list = [1,2,3];
 var List list2 = [1,2,3];  // error
-var names = List<String>(3);
-names.addAll(['Seth', 'Kathy', 'Lars']);
-names.add(42); // Error
+void fun1() {
+  var names = List<String>(3);
+  names.addAll(['Seth', 'Kathy', 'Lars']);
+  names.add(42); // Error
+}
 
 // 抽象类的行为和TS抽象类行为有点类似
 abstract class ObjectCache {
@@ -81,8 +83,10 @@ var xy = <String, num> {
 
 
 // Using parameterized types with constructors
-var nameSet = Set<String>.from(names);
-var views = Map<int, double>();
-var xo = List<int>();
-xo.addAll([1, 2, 3]);
+void fun2() {
+  var nameSet = Set<String>.from(names2);
+  var views = Map<int, double>();
+  var xo = List<int>();
+  xo.addAll([1, 2, 3]);
+}
 

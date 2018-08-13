@@ -64,4 +64,25 @@ var pages = <String, String>{
 var gifs = new Map();
 
 // Symbols
-var ggg = Symbol('ssss');
+Symbol ggg = Symbol('ssss');
+var gg = Symbol('ssss');
+
+Map<String, String> m = {
+  "ss": "sss"
+};
+
+
+// Using collection literals
+var yx = <String>["he", "ss"];
+var xy = <String, num> {
+  "hello": 33,
+  "hhh": 32
+};
+
+
+// Using parameterized types with constructors
+var nameSet = Set<String>.from(names);
+var views = Map<int, double>();
+var xo = List<int>();
+xo.addAll([1, 2, 3]);
+

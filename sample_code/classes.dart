@@ -42,6 +42,20 @@ class Orbiter extends Spacecraft {
   }
 } */
 
+// Mixins
+abstract class Piloted {
+  int astronauts = 1;
+  void describeCrew() {
+    print('Number of astronauts: $astronauts');
+  }
+}
+
+// 继承一个类 再混入一个符合约定条件的混合类 ，也可以不继承直接混合
+class PilotedCraft extends Spacecraft with Piloted {
+  String hello = 'hello';
+  PilotedCraft(String name, DateTime dateTime) : super(name, dateTime);
+}
+
 // main
 void main() {
   var voyager = Spacecraft('Voyager I', DateTime(1997, 9, 5));

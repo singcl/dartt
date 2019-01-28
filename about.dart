@@ -31,3 +31,5 @@ String sayHello(String name) => 'Hello $name!';
 void printInteger(int aNumber) {
   print('The number is $aNumber.'); // Print to console.
 }
+
+String sayHello4(String age) => "Hello $age";

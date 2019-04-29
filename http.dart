@@ -8,7 +8,7 @@ void main(List<String> args) {
 
   Uri uri = Uri(
       scheme: 'https',
-      host: "flutterchina.club",
+      host: "imcoco.top",
       queryParameters: {"xx": "xx", "yy": "yy"});
 
   Future<String> check() async {

@@ -1,6 +1,8 @@
 import 'dart:io';
 import 'dart:async';
 import 'dart:convert';
+// Version note: As of Dart 2.1, you don’t need to import dart:async to use the Future and Stream APIs, 
+// because dart:core exports those classes.
 
 void main(List<String> args) {
   // 1. 创建一个HttpClient

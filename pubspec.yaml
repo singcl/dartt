@@ -1,8 +1,8 @@
 name: dartt
 description: A sample dartt application.
-# version: 1.0.0
-# homepage: https://www.example.com
-# author: singcl <email@example.com>
+version: 1.0.0
+homepage: https://github.com/singcl/dartt
+author: singcl<iambabyer@gmail.com>
 
 environment:
     sdk: '>=2.1.0 <3.0.0'

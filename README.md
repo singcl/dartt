@@ -4,13 +4,13 @@ https://www.dartlang.org/guides/language/language-tour
 
 ### Resource
 
--   [const 与 final 的区别](http://han.guokai.blog.163.com/blog/static/136718271201321911119331/)
+- [const 与 final 的区别](http://han.guokai.blog.163.com/blog/static/136718271201321911119331/)
 
 ### Flutter 项目一直卡在 Initializing gradle...解决方法：
 
 1. 在项目中全局搜索 gradle 找到下面文件：
 
-    ![gradlew](./assets/gradlew.png)
+   ![gradlew](./assets/gradlew.png)
 
 2. 手动在[gradle 服务官网](http://services.gradle.org/distributions/)下载上面指定的文件。这里是 gradle-4.10.2-all.zip
 
@@ -25,3 +25,5 @@ https://www.dartlang.org/guides/language/language-tour
 window 上请在 cmd 中使用 pub
 
 **https://dart.dev/**
+
+`dart SDK 2.1.0 -> 2.5.0` 新增了一些破坏性更新。如果代码编译不通过可以检查是否 **Breaking change** 导致
